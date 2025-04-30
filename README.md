@@ -435,22 +435,22 @@ Admin -->"UseCase 2"
 
 To test Use Case Diagram locally using this repo:
 1. Clone this repo
-    git clone https://github.com/YOUR_USERNAME/cs4340_sp25.git
+    **git clone https://github.com/YOUR_USERNAME/cs4340_sp25.git**
 2. cd to the folder
-    cd cs4340_sp25
+    **cd cs4340_sp25**
 3. Install dependencies 
-    pnpm install
+    **pnpm install**
 4. Run the local development server with live preview support
-    pnpm dev
+    **pnpm dev**
 5. Open http://localhost:9000/use-case.html
 6. Type in text area box for the live editor
 7. Follow the syntax
-    - Declare diagram: use-case-beta
-    - Declare actor (one user allowed on each side): actor User (add 'position right' for actor on the right side)
+    - Declare diagram: **use-case-beta**
+    - Declare actor (one user allowed on each side): **actor User** (add '**position right**' for actor on the right side)
     - Declare use cases:
-      Independent use case: ("Use Case")
-      Actor and Use Case: Actor --> "Use Case"
-    - Declare use case relationship: "Use Case 1" -[relationship]-> "Use Case 2"
+      Independent use case: **("Use Case")**
+      Actor and Use Case: Actor --> **"Use Case"**
+    - Declare use case relationship: **"Use Case 1" -[relationship]-> "Use Case 2"**
  
 ## Release
 
