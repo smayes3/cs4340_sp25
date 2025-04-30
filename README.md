@@ -420,7 +420,38 @@ BiRel(SystemAA, SystemE, "Uses")
 Rel(SystemAA, SystemC, "Sends e-mails", "SMTP")
 Rel(SystemC, customerA, "Sends e-mails to")
 ```
+### Use Case diagram [experimental - <a href="https://mermaid.live/edit#pako:eNpVkM1OwzAQRf9l5ApY07JVQoelgGHQQm2SChbcuJC0LZ2iPvXl9pWImWyu8r7s8zPMYVG0YohWkzCQ6VKzGF8dTVA6OGSkb4mc_NHfzSpfB_nDbpGnCjiQJTEEqh1SaoQuGCiEWK1Ge46sru3B0LrxS1fMCkpyHb-ZGB9J5ZljvAO8ngv3Puc8m0U3A0ZTaVCxjFqKLsm-SH0dXRIj6FJm2mAvs7KZ8m-99bl8WbGrF9ImIGZzINxvFgTFt2NTp0ko_sEqxPKopwUwA3sqUHY1Kx10OYXDYZlIaaFi3rXgSuSNUcd3eqUOniqsc_i74In9ZX7zwf">live editor</a>]
 
+```mermaid
+use-case-beta
+actor User
+actor Admin position right
+("UseCase #")
+User --> "UseCase 1"
+Admin -->"UseCase 2"
+"UseCase 1" -[include]-> "UseCase 2"
+"UseCase #" -[extend]-> "UseCase 2"
+```
+
+To test Use Case Diagram locally using this repo:
+1. Clone this repo
+    git clone https://github.com/YOUR_USERNAME/cs4340_sp25.git
+2. cd to the folder
+    cd cs4340_sp25
+3. Install dependencies 
+    pnpm install
+4. Run the local development server with live preview support
+    pnpm dev
+5. Open http://localhost:9000/use-case.html
+6. Type in text area box for the live editor
+7. Follow the syntax
+    - Declare diagram: use-case-beta
+    - Declare actor (one user allowed on each side): actor User (add 'position right' for actor on the right side)
+    - Declare use cases:
+      Independent use case: ("Use Case")
+      Actor and Use Case: Actor --> "Use Case"
+    - Declare use case relationship: "Use Case 1" -[relationship]-> "Use Case 2"
+ 
 ## Release
 
 For those who have the permission to do so:
