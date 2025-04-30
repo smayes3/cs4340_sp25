@@ -435,7 +435,7 @@ Admin -->"UseCase 2"
 
 To test Use Case Diagram locally using this repo:
 1. Clone this repo
-    **git clone https://github.com/YOUR_USERNAME/cs4340_sp25.git**
+    **git clone https://github.com/smayes3/cs4340_sp25.git**
 2. cd to the folder
     **cd cs4340_sp25**
 3. Install dependencies 
